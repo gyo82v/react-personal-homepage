@@ -1,9 +1,7 @@
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer(){
-    const footer = `bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-800 
-                    text-neutral-300 px-4 py-6 shadow-top-neutral
-                    `
+    const footer = `bg-neutral-700 text-neutral-300 px-4 py-6 shadow-top-neutral`
     const div = `flex flex-col mx-auto max-w-6xl md:flex-row items-center justify-between px-4`
     const div1 = `flex text-2xl gap-6`
     const p = `text-sm mb-4 md:mb-0 text-neutral-400 tracking-wide font-light `
