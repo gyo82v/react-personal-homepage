@@ -2,8 +2,9 @@ import { Link } from "react-router-dom"
 import man from "../images/man.png"
 
 export default function AboutMe(){
-    const section = `flex border border-bleck-600 my-20`
-    const h2 = ``
+    const section = `flex shadow-lg shadow-neutral-700/30 rounded-lg my-20
+                     p-4 `
+    const h2 = `text-2xl font-bold text-center mb-2`
     const p = ``
     const link = ``
     return(
