@@ -1,13 +1,17 @@
 import AboutMe from "../components/AboutMe"
 import Slider from "../components/Slider"
+import SkillsEl from "../components/SkillsEl"
 
 export default function Home(){
     const container = `flex flex-col items-center w-full`
+    const section = `flex flex-col lg:flex-row p-4`
     return(
         <section className={container}>
             <Slider />
-            <AboutMe />
-            <section><h1>skills here</h1></section>
+            <section className={section}>
+                <AboutMe />
+                <SkillsEl />
+            </section>  
         </section>
     )
 }
