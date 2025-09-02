@@ -3,14 +3,17 @@ import LinearBar from "./layout/LinearBar"
 
 
 export default function SkillsEl(){
-    const container = ``
-    const title = `text-2xl font-bold`
-    const section1 = ``
+    const container = `p-4 shadow-all rounded-lg
+                       flex-1`
+    const title = `text-2xl font-bold mb-2 text-neutral-600`
+    const section1 = `flex flex-col gap-4`
     const skillContainer = ``
     const skilTitle = ``
     const skilDesciption = ``
 
-    const skillsEl = skillsData.map(s => (
+    const skillsArray = skillsData.slice(0, 5)
+
+    const skillsEl = skillsArray.map(s => (
         <section key={s.id}>
             <h3>{s.name}</h3>
             <LinearBar gradient="green-cyan" value={s.progression} />

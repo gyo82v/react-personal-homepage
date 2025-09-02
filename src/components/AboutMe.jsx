@@ -2,9 +2,8 @@ import { Link } from "react-router-dom"
 import man from "../images/man.png"
 
 export default function AboutMe(){
-    const section = `flex shadow-lg shadow-neutral-700/30 rounded-lg my-20
+    const section = `flex flex-1 lg:flex-col shadow-all rounded-lg my-20
                      p-4 `
-    const h2 = `text-2xl font-bold text-center mb-2`
     const p = ``
     const link = ``
     return(
@@ -15,7 +14,6 @@ export default function AboutMe(){
                className="w-32 h-32 rounded-lg object-cover flex-shrink-0"
             />
             <div>
-                <h2 className={h2}>About me</h2>
                 <p className={p}>
                   Hello! I'm Giorgio, a web developer passionate about
                   creating beautiful and functional websites.
