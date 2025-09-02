@@ -7,17 +7,17 @@ export default function SkillsEl(){
                        flex-1`
     const title = `text-2xl font-bold mb-2 text-neutral-600`
     const section1 = `flex flex-col gap-4`
-    const skillContainer = ``
-    const skilTitle = ``
-    const skilDesciption = ``
+    const skillContainer = `border-b border-neutral-300 p-4`
+    const skilTitle = `text-lg font-semibold mb-2`
+    const skilDesciption = `text-neutral-600 mt-2`
 
     const skillsArray = skillsData.slice(0, 5)
 
     const skillsEl = skillsArray.map(s => (
-        <section key={s.id}>
-            <h3>{s.name}</h3>
+        <section key={s.id} className={skillContainer}>
+            <h3 className={skilTitle}>{s.name}</h3>
             <LinearBar gradient="green-cyan" value={s.progression} />
-            <p>{s.description}</p>
+            <p className={skilDesciption}>{s.description}</p>
         </section>
     ))
 

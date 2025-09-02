@@ -31,6 +31,10 @@
     -ms-overflow-style: none;
   }
 
+  .reverse-cyan {
+  background: linear-gradient(90deg,#06b6d4,#34d399);
+}
+
   /* Hide scrollbar for WebKit */
   html::-webkit-scrollbar,
   body::-webkit-scrollbar {
@@ -53,12 +57,27 @@
        0 -4px 6px -2px rgba(0, 0, 0, 0.05);
   }
   .shadow-all {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(64, 64, 64, 0.3);
   }
   .shadow-top-neutral {
     box-shadow: 
       0 -10px 15px -3px rgba(64, 64, 64, 0.3), /* neutral-700/30 */
       0 -4px 6px -2px rgba(64, 64, 64, 0.3);
+  }
+  .teal-blue {
+    background: linear-gradient(90deg,#06b6d4,#3b82f6);
+  }
+  .green-cyan {
+    background: linear-gradient(90deg,#34d399,#06b6d4);
+  }
+  .sunset {
+    background: linear-gradient(90deg,#f97316,#ef4444,#a78bfa);
+  }
+  .ocean {
+    background: linear-gradient(90deg,#06b6d4,#0ea5a4,#3b82f6);
+  }
+  .rose-gold {
+    background: linear-gradient(90deg,#fb7185,#f59e0b,#ef4444);
   }
 
 }
